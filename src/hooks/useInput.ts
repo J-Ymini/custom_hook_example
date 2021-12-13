@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-const useInput = (initialValue: string, validator?: unknown) => {
+const useInput = (
+  initialValue: string,
+  validator: (value: string) => boolean
+) => {
   const [value, setValue] = useState<string>(initialValue);
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
@@ -16,7 +19,6 @@ const useInput = (initialValue: string, validator?: unknown) => {
     }
   };
 
-  console.log(value);
   return { value, onChange };
 };
 
