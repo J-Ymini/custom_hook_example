@@ -8,7 +8,6 @@ const Click = (): JSX.Element => {
   };
 
   const title = useClick<HTMLDivElement>(handleClick);
-  console.log(title);
 
   return (
     <>

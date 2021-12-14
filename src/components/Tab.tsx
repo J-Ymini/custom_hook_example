@@ -6,7 +6,7 @@ const Tab = () => {
   const {
     currentItem: { content },
     changeItem,
-  } = useTabs(1, CONTENTS);
+  } = useTabs(0, CONTENTS);
 
   console.log();
 
