@@ -2,9 +2,14 @@ import { useRef, useEffect } from "react";
 
 const useClick = <T extends HTMLElement>(
   handleClick: () => void
-): React.RefObject<T> => {
+): React.RefObject<T> | never => {
   const element = useRef<T>(null);
+
   useEffect(() => {
+    if (typeof handleClick !== "function") {
+      return;
+    }
+
     if (element.current) {
       element.current.addEventListener("click", handleClick);
     }

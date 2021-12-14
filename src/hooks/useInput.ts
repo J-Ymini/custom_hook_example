@@ -2,9 +2,14 @@ import { useState } from "react";
 
 const useInput = (
   initialValue: string,
-  validator: (value: string) => boolean
+  validator: (value: string) => boolean | never
 ) => {
   const [value, setValue] = useState<string>(initialValue);
+
+  if (typeof validator !== "function") {
+    return;
+  }
+
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
 
