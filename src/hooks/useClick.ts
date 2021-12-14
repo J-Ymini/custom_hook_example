@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 
 const useClick = <T extends HTMLElement>(
   handleClick: () => void
-): React.RefObject<T> | never => {
+): React.RefObject<T> => {
   const element = useRef<T>(null);
 
   useEffect(() => {
