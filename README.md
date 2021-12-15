@@ -19,3 +19,5 @@
 📌 useConfirm
 
 📌 useScroll
+
+📌 useFullScreen

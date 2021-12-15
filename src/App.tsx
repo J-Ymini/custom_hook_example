@@ -6,6 +6,7 @@ import Title from "src/components/Title";
 import Click from "src/components/Click";
 import Confirm from "./components/Confirm";
 import Scroll from "./components/Scroll";
+import FullScreen from "./components/FullScreen";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Title />
       <Click />
       <Confirm />
+      <FullScreen />
       <Scroll />
     </>
   );
