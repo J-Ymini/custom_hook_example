@@ -15,3 +15,7 @@
 📌 useTitle
 
 📌 useClick
+
+📌 useConfirm
+
+📌 useScroll
