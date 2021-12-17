@@ -7,6 +7,7 @@ import Click from "src/components/Click";
 import Confirm from "./components/Confirm";
 import Scroll from "./components/Scroll";
 import FullScreen from "./components/FullScreen";
+import Axios from "./components/Axios";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Click />
       <Confirm />
       <FullScreen />
-      <Scroll />
+      {/* <Scroll /> */}
+      <Axios />
     </>
   );
 }
