@@ -18,7 +18,7 @@ function App() {
       <Click />
       <Confirm />
       <FullScreen />
-      {/* <Scroll /> */}
+      <Scroll />
       <Axios />
     </>
   );

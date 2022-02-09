@@ -1,7 +1,6 @@
 import { useState, useLayoutEffect as useEffect } from "react";
 
 import axios from "axios";
-import { getAllJSDocTags } from "typescript";
 
 const useAxios = (
   url?: string,
